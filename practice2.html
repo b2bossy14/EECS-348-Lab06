@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Practice2!</title>
+    <style>
+        #paragraph {
+            border-bottom-style: solid;
+            border-bottom-width: 5px;
+            border-left-style: solid;
+            border-left-width: 5px;
+            border-right-style: solid;
+            border-right-width: 5px;
+            border-top-style: solid;
+            border-top-width: 5px;
+            display: block;
+
+        }
+
+        p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>EECS 348 Lab Seven Practice2!</h1>
+
+    <div id="paragraph">
+        Paragraph to be altered.
+    </div>
+
+    <p>Border R(0-255): <input type="text" id="border_R" value=""></p>
+    <p>Border G(0-255): <input type="text" id="border_G" value=""></p>
+    <p>Border B(0-255): <input type="text" id="border_B" value=""></p>
+
+    <p>Border Width: <input type="text" id="border_width" value=""></p>
+
+    <p>Background R(0-255): <input type="text" id="bg_R" value=""></p>
+    <p>Background G(0-255): <input type="text" id="bg_G" value=""></p>
+    <p>Background B(0-255): <input type="text" id="bg_B" value=""></p>
+
+    <button onclick="applyStyles()">Change the color!</button>
+
+    <script type="text/javascript" src="functions.js"></script>
+</body>
+</html>

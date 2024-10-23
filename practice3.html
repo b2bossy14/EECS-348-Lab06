@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Practice3!</title>
+    <style>
+        #paragraph {
+            border-bottom-style: solid;
+            border-bottom-width: 5px;
+            border-left-style: solid;
+            border-left-width: 5px;
+            border-right-style: solid;
+            border-right-width: 5px;
+            border-top-style: solid;
+            border-top-width: 5px;
+            display: block;
+
+        }
+
+        p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>EECS 348 Lab Seven Practice3!</h1>
+
+    <p>First Password: <input type="text" id="pass1" value=""></p>
+    <p>Second Password: <input type="text" id="pass2" value=""></p>
+
+    <button onclick="validate()">Validate Your Passwords</button>
+
+    <script>
+        function validate(){
+            var password1 = document.getElementById("pass1").value;
+            var password2 = document.getElementById("pass2").value;
+
+            if (password1.length < 8 || password2.length < 8) {
+                alert("The length of the first password is less than 8 letters!");
+                return;
+            }
+
+            if (password1 !== password2) {
+                alert("Two passwords don't match!");
+                return;
+
+            }
+
+            if (password1 == password2) {
+                alert("Everything is good!");
+                return;
+
+        }
+
+    }
+    </script>
+
+
+</body>
+</html>
